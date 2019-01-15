@@ -10,8 +10,12 @@ export class AppComponent {
 
   active: boolean = false;
 
+  array: string[];
+
   constructor() {
     console.log('Constructor!');
+
+    this.array = ['A', 'B', 1, 2];
   }
 
   mostraConsole() {
