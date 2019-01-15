@@ -1,3 +1,8 @@
 <div class="message">
   {{ message }}
 </div>
+
+<a href="javascript:;" (click)="showDiv()">Mostrar div</a>
+<div *ngIf="active">
+  Div Active
+</div>

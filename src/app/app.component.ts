@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Project-Angular';
 
+  active: boolean = false;
 
-  
+  constructor() {
+    console.log('Constructor!');
+  }
 
   mostraConsole() {
     const message = 'Title Message';
@@ -25,6 +28,10 @@ export class AppComponent {
     if (result > 2) {
       console.log('Bigger then 2');
     }
+  }
+
+  showDiv() {
+    this.active = true;
   }
   
 }
