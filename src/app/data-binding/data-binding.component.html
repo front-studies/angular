@@ -23,16 +23,25 @@
       <option value="alert-danger">Danger</option>
     </select>
     <br><br>
-    <div class="alert" role="alert" [class.alert-success]="class.value === 'alert-success'">
+
+    <div class="alert {{ class.value }}">
+      Colored text according to the value of select box 
+    </div>
+
+    <div class="alert" role="alert" [class.alert-success]="class.value == 'alert-success'">
       A simple success alert—check it out!
     </div>
-    <div class="alert" role="alert" [class.alert-info]="class.value === 'alert-info'">
+    <div class="alert" role="alert" [class.alert-info]="class.value == 'alert-info'">
       A simple info alert—check it out!
     </div>
-    <div class="alert" role="alert" [class.alert-warning]="class.value === 'alert-warning'">
+    <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">
       A simple warning alert—check it out!
     </div>
-    <div class="alert" role="alert" [class.alert-danger]="class.value === 'alert-danger'">
+    <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">
+      A simple danger alert—check it out!
+    </div>
+
+    <div class="alert alert-danger" role="alert" [style.display]="class.value == 'alert-danger' ? 'block' : 'none'">
       A simple danger alert—check it out!
     </div>
 
