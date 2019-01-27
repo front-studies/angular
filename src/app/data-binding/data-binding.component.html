@@ -74,4 +74,37 @@
         </span>
     </div>
   </article>
+
+</section>
+
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text"
+        [value]="name"
+        (input)="name = $event.target.value"
+      >
+
+      <input type="text"
+        [ngModel]="name"
+        (ngModelChange)="name = $event"
+      >
+
+      <input type="text" [(ngModel)]="name">
+
+      <input type="text" bindon-ngModel="name">
+
+      <p>You typed: {{ name }}</p>
+    </div>
+
+    <div>
+
+      <p>My name is {{ person.name }} and I have {{ person.age }} years old.</p>
+
+      <input type="text" [(ngModel)]='person.name'>
+      <input type="text" [(ngModel)]='person.age'>
+
+    </div>
+  </article>
 </section>
