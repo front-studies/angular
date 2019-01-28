@@ -31,6 +31,8 @@ export class DataBindingComponent implements OnInit {
     age: 20
   }
 
+  nameOfCourse: string = 'Angular';
+
   getValor() {
     return 1;
   }
