@@ -8,6 +8,7 @@ import { MyFirst2Component } from './my-first2/my-first2.component';
 import { CoursesModule } from './courses/courses.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { InputPropertyComponent } from './input-property/input-property.componen
     MyFirst2Component,
     DataBindingComponent,
     InputPropertyComponent,
+    OutputPropertyComponent,
   ],
   imports: [
     BrowserModule,

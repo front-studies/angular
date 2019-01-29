@@ -116,3 +116,15 @@
     <app-course [name]="nameOfCourse"></app-course>
   </article>
 </section>
+
+<section class="input-output-properties">
+  <article>
+    <h3>Input/Output Properties</h3>
+
+    <app-course [name]="nameOfCourse"></app-course>
+
+    <accountant [value]="initialValue"
+      (changeValue)="onChangeValue($event)"
+    ></accountant>
+  </article>
+</section>
