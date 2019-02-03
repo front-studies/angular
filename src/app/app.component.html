@@ -2,10 +2,14 @@
   {{ title }}
 </h1>
 
-<my-first-component></my-first-component>
+<!-- <my-first-component></my-first-component> -->
 
-<app-my-first2></app-my-first2>
+<!-- <app-my-first2></app-my-first2> -->
 
-<app-courses></app-courses>
+<!-- <app-courses></app-courses> -->
 
-<app-data-binding></app-data-binding>
+<!-- <app-data-binding></app-data-binding> -->
+
+<app-cycle [initValue]="value" *ngIf="!deleteCycle"></app-cycle>
+<button (click)="changeValue()">Change Value</button>
+<button (click)="cycleDestroy()">Cycle Destroy</button>

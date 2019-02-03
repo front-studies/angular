@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+
+  value: number = 5;
+  deleteCycle: boolean = false;
+
+  changeValue() {
+    this.value++;
+  }
+
+  cycleDestroy() {
+    this.deleteCycle = true;
+  }
 }
