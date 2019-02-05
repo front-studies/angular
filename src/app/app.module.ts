@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CycleComponent } from './cycle/cycle.component';
+import { DirectiveNgifComponent } from './directive-ngif/directive-ngif.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CycleComponent } from './cycle/cycle.component';
     InputPropertyComponent,
     OutputPropertyComponent,
     CycleComponent,
+    DirectiveNgifComponent,
   ],
   imports: [
     BrowserModule,
