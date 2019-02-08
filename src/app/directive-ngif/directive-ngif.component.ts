@@ -20,3 +20,4 @@ export class DirectiveNgifComponent implements OnInit {
   }
 
 }
+
