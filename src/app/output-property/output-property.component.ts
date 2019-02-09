@@ -31,4 +31,3 @@ export class OutputPropertyComponent implements OnInit {
   }
 
 }
- 
