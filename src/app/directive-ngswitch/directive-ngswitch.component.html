@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" 
+        [class.active]="tab === 'home'"
+        (click)="tab = 'home'">Home</a>
+      <a class="nav-item nav-link" 
+      [class.active]="tab === 'features'"
+      (click)="tab = 'features'">Features</a>
+      <a class="nav-item nav-link" 
+      [class.active]="tab === 'pricing'"
+      (click)="tab = 'pricing'">Pricing</a>
+      <a class="nav-item nav-link" 
+      [class.active]="tab === 'about'"
+      (click)="tab = 'about'">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" [ngSwitch]="tab">
+  <p *ngSwitchCase="'home'">Home</p>
+  <p *ngSwitchCase="'features'">Features</p>
+  <p *ngSwitchCase="'pricing'">Pricing</p>
+  <p *ngSwitchCase="'about'">About</p>
+  <p *ngSwitchDefault>Home</p>
+</div>
